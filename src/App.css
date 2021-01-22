@@ -1,0 +1,72 @@
+.App {
+  display: flex;
+}
+body {
+  background-color: #d7d7d7;
+}
+.form-title{
+  background-color: #333333;
+  color: #f7f7ff;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+.content {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #8499B1;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.blanksTitle {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+}
+
+input {
+  padding: 0.3rem;
+  width: 85%;
+  border-radius: 4px;
+}
+
+.content-area {
+  width: 100%;
+}
+.form-container {
+  max-width: 50rem;
+  margin: 0 auto 5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+button {
+  border-radius: 4px;
+  background-color: #333333;
+  color: white;
+  padding: 0.7rem;
+  width: 30rem;
+  margin: 1rem auto;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #494949;
+  cursor: pointer;
+}
+
+.story{
+  text-align: center;
+  background-color: #8499B1;
+  border: black 2px solid;
+  margin: 25% 0;
+  font-weight: 450;
+  font-size: 18px;
+  padding: 0 1.5rem;
+}
+
+.blanks {
+  width: 50%
+}
