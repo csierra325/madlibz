@@ -55,10 +55,10 @@ class Madlibz extends React.Component {
     //   result,
     // }))
 
-    // const error = this.state.blanks.map((blank, i) => !this.state.value[i]);
-    // this.setState({ error });
+    const error = this.state.blanks.map((blank, i) => !this.state.value[i]);
+    this.setState({ error });
 
-    this.setState({ showErrors: false })
+    // this.setState({ showErrors: false })
   }
 
   render() {
@@ -74,9 +74,9 @@ class Madlibz extends React.Component {
           <div className='content'>
             {this.state.blanks && !this.state.result && this.state.blanks.map((blank, index) =>
               <div className='blanks'>
-                {/* {this.state.error[index] && <div>Please fill this out</div>}
-                 */}
-                {!this.state.showErrors && !this.state.value[index] && <div>Please fill this out</div>}
+                {this.state.error[index] && <div>Please fill this out</div>}
+
+                {/* {!this.state.showErrors && !this.state.value[index] && <div>Please fill this out</div>} */}
                 <div className='blanksTitle'>{blank}:</div>
                 <input
                   onChange={(event) => { this.handleChange(event, index) }}
