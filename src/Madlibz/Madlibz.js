@@ -10,6 +10,7 @@ function Madlibz() {
   const [value, setValue] = useState('');
 
   const newGame = async () => {
+    setValue('');
     const res = await fetch('http://madlibz.herokuapp.com/api/random?minlength=5&maxlength=25')
     if (!res.ok) {
       const error = await res.text();
@@ -19,10 +20,9 @@ function Madlibz() {
     if (data) {
       setTitle(data.title);
       setBlanks(data.blanks);
-      setSentences(data.value)
+      setSentences(data.value);
       setStory('');
-      setValue('');
-      setShowErrors(true)
+      setShowErrors(true);
     };
   };
 
