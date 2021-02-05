@@ -70,3 +70,8 @@ button:hover {
 .blanks {
   width: 50%
 }
+
+.error{
+  color: red;
+  font-weight: 400;
+}
